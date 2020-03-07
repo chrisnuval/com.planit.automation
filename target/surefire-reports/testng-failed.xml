@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="tests(failed)" verbose="0">
     <classes>
-      <class name="tests.test_sendSupportMessage">
+      <class name="tests.test_planit">
         <methods>
           <include name="TeardownTest"/>
-          <include name="init"/>
+          <include name="sendContactUsMessage"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- tests.test_sendSupportMessage -->
+      </class> <!-- tests.test_planit -->
     </classes>
   </test> <!-- tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

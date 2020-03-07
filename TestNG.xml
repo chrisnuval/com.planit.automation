@@ -3,7 +3,7 @@
 <suite name="Suite"  >
     <test name="tests">
         <classes>
-            <class name="tests.test_sendSupportMessage"/>
+            <class name="tests.test_planit"/>
         </classes>
     </test>
 </suite>

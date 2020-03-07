@@ -16,37 +16,36 @@ public class contactUsPage extends basePage{
 	By orderReferenceIDField = By.id("id_order");
 	By messageField = By.id("message");
 	By sendButton = By.id("submitMessage");
-	//By subjectHeading = By.id("id_contact");
+	By successAlert = By.xpath("alert alert-success");
 	WebElement subjectHeading = driver.findElement(By.id("id_contact"));
 
 	
-	public contactUsPage clickContactUsButton() {
-		click(contactUs);
-		return this;
-	}
-	public contactUsPage fillUpEmail(String email) {
+	public void fillUpEmail(String email) {
 		inputString(emailField,email);
-		return this;
+		
 	}
 	
-	public contactUsPage fillUpOrderReferenceID(String orderID) {
+	public void fillUpOrderReferenceID(String orderID) {
 		inputString(orderReferenceIDField,orderID);
-		return this;
+	
 	}
 
-	public contactUsPage fillUpMessageBox(String msg) {
+	public void fillUpMessageBox(String msg) {
 		inputString(messageField,msg);
-		return this;
+		
 	}
 	
-	public contactUsPage clickSendMsg() {
+	public void clickSendMsg() {
 		click(sendButton);
-		return this;
+		
 	}
 	
-	public contactUsPage selectSubjectHeading(String heading) {
+	public void selectSubjectHeading(String heading) {
 		Select select = new Select(subjectHeading);
-		select.selectByValue(heading);
-		return this;
+		select.selectByVisibleText(heading);
+	}
+	
+	public void validateIfMsgSent() {
+		waitVisibility(successAlert);
 	}
 }
