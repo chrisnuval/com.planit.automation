@@ -1,35 +1,52 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
-public class contactUsPage {
-
-	WebDriver driver;
+public class contactUsPage extends basePage{
 	
-	public contactUsPage(WebDriver driver) {
-		this.driver=driver;
+	public contactUsPage (WebDriver driver) {
+        super(driver);
+    }
+	
+	By contactUs = By.id("contact-link");
+	By emailField = By.id("email");
+	By orderReferenceIDField = By.id("id_order");
+	By messageField = By.id("message");
+	By sendButton = By.id("submitMessage");
+	//By subjectHeading = By.id("id_contact");
+	WebElement subjectHeading = driver.findElement(By.id("id_contact"));
+
+	
+	public contactUsPage clickContactUsButton() {
+		click(contactUs);
+		return this;
+	}
+	public contactUsPage fillUpEmail(String email) {
+		inputString(emailField,email);
+		return this;
 	}
 	
-	@FindBy(id="id_contact")
-	public static WebElement subjectHeading;
-	public static Select subjectHeadingSelect = new Select(subjectHeading);
+	public contactUsPage fillUpOrderReferenceID(String orderID) {
+		inputString(orderReferenceIDField,orderID);
+		return this;
+	}
+
+	public contactUsPage fillUpMessageBox(String msg) {
+		inputString(messageField,msg);
+		return this;
+	}
 	
-	@FindBy(id="email")
-	public static WebElement emailField;
+	public contactUsPage clickSendMsg() {
+		click(sendButton);
+		return this;
+	}
 	
-	@FindBy(id="id_order")
-	public static WebElement orderReferenceField;
-	
-	@FindBy(id="message")
-	public static WebElement messageField;
-	
-	@FindBy(id="submitMessage")
-	public static WebElement sendButton;
-	
-	@FindBy(how=How.CLASS_NAME,using="alert alert-success")
-	public static WebElement successAlert;
+	public contactUsPage selectSubjectHeading(String heading) {
+		Select select = new Select(subjectHeading);
+		select.selectByValue(heading);
+		return this;
+	}
 }

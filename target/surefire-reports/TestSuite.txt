@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.769 sec <<< FAILURE! - in TestSuite
+init(tests.test_sendSupportMessage)  Time elapsed: 20.089 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Cannot locate option with value: Customer service
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Christians-MacBook-Pro.local', ip: '2404:3c00:30a0:caf0:0:0:0:b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.1', java.version: '13.0.2'
+Driver info: driver.version: unknown
+	at tests.test_sendSupportMessage.init(test_sendSupportMessage.java:12)
+

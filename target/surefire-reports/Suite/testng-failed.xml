@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.test_sendSupportMessage">
+        <methods>
+          <include name="TeardownTest"/>
+          <include name="init"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- tests.test_sendSupportMessage -->
+    </classes>
+  </test> <!-- tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->
