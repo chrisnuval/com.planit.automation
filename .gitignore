@@ -4,3 +4,4 @@ target/surefire-reports/emailable-report.html
 *.html
 *.html
 target/surefire-reports/emailable-report.html
+target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
