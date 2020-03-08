@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import pages.contactUsPage;
 import pages.homePage; 
 import pages.loginPage;
-public class test_planit extends test_initialize {
+public class test_sendContactUsMessage extends test_initialize {
 	
 	@Test
 	public void sendContactUsMessage() throws Exception{
@@ -17,17 +17,6 @@ public class test_planit extends test_initialize {
 		contactUsPage.clickSendMsg();
 		contactUsPage.validateIfMsgSent();
 		 
-	}
-	
-	@Test
-	public void createAccount() throws Exception {
-		homePage homePage = new homePage(driver);
-		homePage.clickLoginBtn();
-		
-		loginPage loginPage = new loginPage(driver);
-		loginPage.fillUpCreateEmailField("test@test.com");
-		loginPage.clickCreateAccountButton();
-		loginPage.errorCreatingAccountDueToDuplicate();
 	}
 	
 	

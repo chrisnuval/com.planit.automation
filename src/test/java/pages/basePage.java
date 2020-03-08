@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -12,7 +13,7 @@ public class basePage {
 
 	public basePage (WebDriver driver){
         this.driver = driver;
-        wait = new WebDriverWait(driver,15);
+        wait = new WebDriverWait(driver,30);
     }
 	
     public void waitVisibility(By elementBy) {
@@ -34,10 +35,5 @@ public class basePage {
         return driver.findElement(elementBy).getText();
     }
  
-    public void assertEquals (By elementBy, String expectedText) {
-        waitVisibility(elementBy);
-        Assert.assertEquals(readText(elementBy), expectedText);
- 
-    }
 
 }

@@ -3,7 +3,8 @@
 <suite name="Suite"  >
     <test name="tests">
         <classes>
-            <class name="tests.test_planit"/>
+            <class name="tests.test_sendContactUsMessage"/>
+            <class name="tests.test_createAccount"/>
         </classes>
     </test>
 </suite>

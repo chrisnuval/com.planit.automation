@@ -1,6 +1,7 @@
 /Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/pages/homePage.java
+/Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/tests/test_sendContactUsMessage.java
 /Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/pages/loginPage.java
+/Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/tests/test_createAccount.java
 /Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/pages/basePage.java
 /Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/tests/test_initialize.java
-/Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/tests/test_planit.java
 /Users/cnuval/Documents/eclipse-workspace/com.planit.automation/src/test/java/pages/contactUsPage.java
